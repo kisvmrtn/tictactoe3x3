@@ -52,7 +52,6 @@ article {
 }
 aside {
     grid-area: as;
-    margin-bottom: 10rem;
     border: 1px solid black;
     border-radius: 10px;
     width: max-content;
@@ -69,4 +68,7 @@ aside {
     color: pink;
     font-size: 20px;
     font-weight: bold;
+}
+input {
+    color: black;
 }
