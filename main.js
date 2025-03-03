@@ -1,2 +1,2 @@
-import { lerako } from "./fuggvenyek.js";
-lerako()
+import { jatekIndito } from "./fuggvenyek.js";
+jatekIndito()

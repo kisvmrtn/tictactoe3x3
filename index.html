@@ -10,7 +10,7 @@
 <body>
     <main>
         <header>
-            <h1>TicTacToe</h1>
+            <h1>TicTacToe (Kisváradi Márton)</h1>
         </header>
         <section>
             <h2>Játékos neve:</h2>
@@ -18,7 +18,7 @@
             <input type="text" name="nev1" id="nev1"> <br>
             <label for="nev2">2. játékos (O) </label>
             <input type="text" name="nev2" id="nev2"><br>
-            <button type="submit">Kezdés</button>
+            <button type="submit" id="start">Kezdés</button>
         </section>
         <article>
             <div class="jatekmezo"></div>
@@ -33,7 +33,10 @@
         </article>
         <aside>
             <h3>Játék állapota:</h3>
-            <p>Aktuális játékos:</p>
+            <p>Aktuális játékos: </p> <br>
+            <p id="aktualisjatekos"></p>
+            <h3>Meccs kimenetele:</h3>
+            <p id="infobox"></p>
         </aside>
     </main>
 </body>

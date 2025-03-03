@@ -2,15 +2,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 main {
     display: grid;
     grid-template-areas: "h" "h"
                          "s" "s"
                          "a" "as";
+    max-width: 1000px;
+    margin: auto;
+    grid-gap: 10px;
+    text-align: center;
+    background-color: rgb(53, 133, 133);
+    border-radius: 20px;
 }
 header {
     grid-area: h;
+    margin-bottom: 10px;
 }
 section {
     grid-area: s;
@@ -22,21 +31,42 @@ section {
     background-color: gray;
 }
 .jatekmezo p {
-    color: red;
+    color: pink;
     font-size: 85px;
     text-align: center;
 }
 section button {
     padding: 5px;
+    margin: 5px;
+    background-color: pink;
+    color: red;
 }
 article {
     grid-area: a;
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
     gap: 15px;
     width: max-content;
 }
 aside {
     grid-area: as;
+    margin-bottom: 10rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: max-content;
+    margin: auto;
+    padding: 20px;
+}
+.infoP {
+    color: pink;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+}
+#aktualisjatekos {
+    color: pink;
+    font-size: 20px;
+    font-weight: bold;
 }
