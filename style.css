@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    display: grid;
+    grid-template-areas: "h" "h"
+                         "s" "s"
+                         "a" "as";
+}
+header {
+    grid-area: h;
+}
+section {
+    grid-area: s;
+}
+.jatekmezo {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+.jatekmezo p {
+    color: red;
+    font-size: 85px;
+    text-align: center;
+}
+section button {
+    padding: 5px;
+}
+article {
+    grid-area: a;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    width: max-content;
+}
+aside {
+    grid-area: as;
+}
