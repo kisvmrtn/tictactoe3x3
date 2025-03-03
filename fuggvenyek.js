@@ -52,10 +52,12 @@ const gyoztesEllenorzo = () => {
             infoBox.innerHTML += `<p class="infoP">${Xnev.value} (X) nyert</p>`
             aktJatekos.innerHTML = ''
             nyertes = true
+            break;
         } else if (combo.every(nyertes => Omezok.includes(nyertes))) {
-            infoBox.innerHTML += `<p class="infoP">${Onev.value} (X) nyert</p>`
+            infoBox.innerHTML += `<p class="infoP">${Onev.value} (O) nyert</p>`
             aktJatekos.innerHTML = ''
             nyertes = true
+            break;
         } else if (Xmezok.length === 5) {
             infoBox.innerHTML += '<p class="infoP">Döntetlen</p>'
             aktJatekos.innerHTML = ''
