@@ -58,11 +58,11 @@ const gyoztesEllenorzo = () => {
             aktJatekos.innerHTML = ''
             nyertes = true
             break;
-        } else if (Xmezok.length === 5) {
-            infoBox.innerHTML += '<p class="infoP">Döntetlen</p>'
-            aktJatekos.innerHTML = ''
-            nyertes = true
-            return
         }
+    }
+    if (!nyertes && Xmezok.length === 5) {
+        infoBox.innerHTML += '<p class="infoP">Döntetlen</p>'
+        aktJatekos.innerHTML = ''
+        nyertes = true
     }
 }
